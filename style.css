@@ -1,0 +1,159 @@
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    font-weight: 700;
+    /*margin-top: 5%;*/
+}
+header h1{
+    font-weight: 700;
+    font-size: 60px;
+}
+
+body{
+    
+    height: 100vh;
+    background: linear-gradient(#1d539e 50%, #f9fbfc 50%);
+    background-repeat: no-repeat;
+}
+html{
+    background-color: #f9fbfc;
+}
+.fra{
+    text-align: center;
+    text-align-last: center;
+    max-width: 504px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 23px;
+    margin-top: 1%;
+}
+
+.planos{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    height: 620px;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.box{
+    width: 360px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 1%;
+    transition: ease 0.5s;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+.box:hover{
+    width: 375px;
+    height: 530px;
+    
+}
+.plano-type{
+    height: 10%;
+    font-size: 170%;
+    padding: 5%;
+    color: black;
+    font-weight: 700;
+    background: #ffd000;
+    border-radius: 10px 10px 0 0;
+}
+.plano-perce{
+    height: 10%;
+    font-size: 120%;
+    color: #828799;
+    padding-left: 5%;
+    margin-top: 2%;
+}
+.plano-perce a {
+    color: black;
+    font-size: 40px;
+}
+
+.plano-lorem{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 110%;
+    color: #828799;
+}
+.plano-lista{
+    padding-left: 5%;
+    margin-top: 5%;
+    color: #828799;
+}
+.plano-lista,li{
+    list-style: none;
+    color: #828799;
+    margin-top: 5%;
+}
+.but{
+   
+    border-radius: 5px;
+    margin: 159px 30px 30px 30px;
+    height: 45px;
+    text-align: center;
+    padding-top: 8px;
+    color: #1d539e;
+    cursor: pointer;
+    transition: all 1s;
+}
+.but-sub{
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+    text-align-last: center;
+    text-anchor: c;
+    text-align: left;
+    
+    font-weight: 700;
+    transition: all 1s;
+    font-size: 20px;
+}
+button{
+    width: 200px;
+    height: 40px;
+    color: #1d539e;
+    border-radius: 5px;
+    border: 2px solid #1d539e;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+button:hover{
+    background-color: #1d539e;
+    color: white;
+}
+
+@media (max-width:1200px) {
+    .planos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width:1446px) {
+    .planos{
+        margin-left: 0;
+        margin-right:0;
+    }
+}
+@media (max-width: 400px) {
+    .box{
+        width: 310px;
+    }
+    .box:hover{
+        width: 349px;
+    }
+}
